@@ -72,11 +72,28 @@ console.log(benutzer);
 // } else {
 //     console.log("noch nicht 18...");
 // }
-// schleife: i wird hier erst al 0, definiert, dann alles kleiner Zehn, dann wird i + 1 gemacht (++ ist verkürzte Schreibweise)
+// schleife: i wird hier erst al 0 definiert (Kann auch jeder andere gewollte Wert zugewiesen bekommen), dann alles kleiner Zehn, dann wird i + 1 gemacht (++ ist verkürzte Schreibweise)
 
 //"For-Schleife"
 // an <= denken
 for (let i=0; i<=10; i++)
     console.log("Wert von i:", i);
 
+// Funktion: Kapselt mehrere Aufrufe, die man immer wieder brauch
+//function - startet immer so -  shwoAge - Name der F - (birthYear) - wird im Anschluss berechnet auf Basis des angegebenen Alters ->  let age = 2018 - birthYear;
+function showAge(birthYear) {
+    let age = 2018 - birthYear;
+    console.log("Du bist ", age, "Jahre alt");
+}
 
+showAge(2013);
+showAge(1954);
+showAge(1992);
+//> gibt in Konsole Alter aus (5, 64, 26)
+
+function calcAge(birthYear) {
+    return 2018-birthYear
+}
+
+console.log("du bist ", calcAge(1990), "Jahre");
+console.log("du bist ", calcAge (1002), ".");
