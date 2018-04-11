@@ -53,10 +53,30 @@ let benutzer = {
 };
 console.log("Benutzer Alter: ", benutzer.alter);
 
-// Bestzeit wird dann noch hinzugefügt
+// Bestzeit wird dann noch zur oberen Liste hinzugefügt
 benutzer.bestzeit = 200;
 console.log(benutzer);
+// eckige Klammer ermöglicht Zugriff auf Daten
 benutzer ["bestzeit ever"] = 100;
 console.log(benutzer);
+
+// Benutzer Eingabe > Öffnet auf Website Fenster mit Eingabemöglichkeit;
+// Zeilenkommentar umschalten: über Bearbeiten (macht bereits geschriebenes zu Kommentar)
+// let alter = prompt("Wie alt bist du?");
+// console.log("Du bist ", alter, "Jahre alt");
+// console.log("Über 18?", age > 18);
+
+// // if- Abfrage> Funktion/Bedingung> liefert Antwort auf vorherige Eingabefrage (s.o.); mehrer Funktionen innerhalb if möglich (else)
+// if (alter > 18) {
+//     console.log("Du darfst hinein...");
+// } else {
+//     console.log("noch nicht 18...");
+// }
+// schleife: i wird hier erst al 0, definiert, dann alles kleiner Zehn, dann wird i + 1 gemacht (++ ist verkürzte Schreibweise)
+
+//"For-Schleife"
+// an <= denken
+for (let i=0; i<=10; i++)
+    console.log("Wert von i:", i);
 
 
